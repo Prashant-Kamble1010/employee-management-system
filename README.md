@@ -17,7 +17,24 @@ A Full Stack Employee Management System developed using Spring Boot, MySQL, HTML
 - Docker Compose Deployment
 
 ---
+## Application Screenshots
 
+### Employee Management Dashboard
+![Employee UI](src/main/resources/static/employee-management-ui.png)
+
+### MySQL Database Records
+![MySQL Data](src/main/resources/static/mysql-database-data.png)
+
+### Maven Build Success
+![Build Success](src/main/resources/static/maven-build-success.png)
+
+### Docker Compose Deployment
+![Docker Compose](src/main/resources/static/docker-compose-up.png)
+
+### Running Containers
+![Docker Containers](src/main/resources/static/docker-containers-running.png)
+
+---
 ## Tech Stack
 
 ### Backend
