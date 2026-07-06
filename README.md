@@ -28,8 +28,8 @@ A Full Stack Employee Management System developed using Spring Boot, MySQL, HTML
 ### Maven Build Success
 ![Build Success](src/main/resources/static/maven-build-success.png)
 
-### Docker Compose Deployment
-![Docker Compose](src/main/resources/static/docker-compose-up.png)
+### Jar File Creted
+![Docker Compose](src/main/resources/static/jar-file-generated.png)
 
 ### Running Containers
 ![Docker Containers](src/main/resources/static/docker-containers-running.png)
