@@ -1,0 +1,198 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#eef2ff,#f8fafc);
+    min-height:100vh;
+    padding:40px;
+}
+
+/* Title */
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#1e293b;
+    font-size:42px;
+    font-weight:700;
+}
+
+/* Form Section */
+
+.form-box{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+    margin-bottom:30px;
+}
+
+input{
+    width:250px;
+    padding:14px 18px;
+    border:2px solid #e2e8f0;
+    border-radius:12px;
+    font-size:15px;
+    transition:0.3s;
+    outline:none;
+}
+
+input:focus{
+    border-color:#6366f1;
+    box-shadow:0 0 10px rgba(99,102,241,.3);
+}
+
+/* Save Button */
+
+button{
+    border:none;
+    cursor:pointer;
+    padding:14px 20px;
+    border-radius:12px;
+    font-size:14px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+/* Main Save Button */
+
+.form-box button{
+    background:linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+    );
+    color:white;
+}
+
+.form-box button:hover{
+    transform:translateY(-3px);
+    box-shadow:
+    0 8px 20px rgba(79,70,229,.35);
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:20px;
+    background:white;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+}
+
+/* Header */
+
+th{
+    background:linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+    );
+
+    color:white;
+    padding:18px;
+    font-size:16px;
+}
+
+td{
+    padding:16px;
+    text-align:center;
+    border-bottom:1px solid #e2e8f0;
+}
+
+/* Row Hover */
+
+tbody tr{
+    transition:.3s;
+}
+
+tbody tr:hover{
+    background:#f8fafc;
+    transform:scale(1.01);
+}
+
+/* Action Buttons */
+
+.edit-btn{
+    background:#0ea5e9;
+    color:white;
+    margin-right:5px;
+}
+
+.edit-btn:hover{
+    background:#0284c7;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+/* Empty Table */
+
+#employeeTable:empty::before{
+    content:"No Employees Found";
+    display:block;
+    text-align:center;
+    padding:25px;
+    color:#64748b;
+}
+
+/* Scroll Table Mobile */
+
+.table-container{
+    overflow-x:auto;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    .form-box{
+        flex-direction:column;
+    }
+
+    input{
+        width:100%;
+    }
+
+    table{
+        font-size:14px;
+    }
+
+    th,
+    td{
+        padding:10px;
+    }
+}
