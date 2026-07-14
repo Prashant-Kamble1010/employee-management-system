@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reports & Analytics</title>
+
+    <style>
+
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+        background:#f4f6f9;
+        padding:30px;
+        }
+
+        /* Header */
+
+        .header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:25px;
+        }
+
+        .header h1{
+        color:#333;
+        }
+
+        /* Tabs */
+
+        .tabs{
+        display:flex;
+        gap:15px;
+        margin-bottom:25px;
+        }
+
+        .tab{
+        background:#6c63ff;
+        color:white;
+        padding:12px 25px;
+        border-radius:8px;
+        cursor:pointer;
+        font-weight:bold;
+        }
+
+        .tab:hover{
+        background:#5146ff;
+        }
+
+        /* Export Buttons */
+
+        .export{
+        display:flex;
+        gap:15px;
+        margin-bottom:25px;
+        }
+
+        .pdf{
+        background:#dc3545;
+        }
+
+        .excel{
+        background:#198754;
+        }
+
+        .export button{
+        padding:12px 20px;
+        border:none;
+        border-radius:8px;
+        color:white;
+        cursor:pointer;
+        font-size:15px;
+        }
+
+        /* Summary Cards */
+
+        .cards{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:20px;
+        margin-bottom:30px;
+        }
+
+        .card{
+        background:white;
+        padding:20px;
+        border-radius:15px;
+        text-align:center;
+        box-shadow:0 4px 10px rgba(0,0,0,.1);
+        }
+
+        .card h2{
+        color:#6c63ff;
+        margin-top:10px;
+        }
+
+        /* Table */
+
+        .table-box{
+        background:white;
+        padding:20px;
+        border-radius:15px;
+        box-shadow:0 4px 10px rgba(0,0,0,.1);
+        }
+
+        table{
+        width:100%;
+        border-collapse:collapse;
+        }
+
+        th{
+        background:#6c63ff;
+        color:white;
+        padding:15px;
+        }
+
+        td{
+        padding:12px;
+        text-align:center;
+        border-bottom:1px solid #eee;
+        }
+
+        tr:hover{
+        background:#f8f9fa;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Reports & Analytics</h1>
+</div>
+
+<div class="tabs">
+
+    <div class="tab">
+        Employee Report
+    </div>
+
+    <div class="tab">
+        Attendance Report
+    </div>
+
+    <div class="tab">
+        Salary Report
+    </div>
+
+</div>
+
+<div class="export">
+
+    <button class="pdf">
+        Export PDF
+    </button>
+
+    <button class="excel">
+        Export Excel
+    </button>
+
+</div>
+
+<div class="cards">
+
+    <div class="card">
+        <h4>Total Employees</h4>
+        <h2>150</h2>
+    </div>
+
+    <div class="card">
+        <h4>Attendance %</h4>
+        <h2>92%</h2>
+    </div>
+
+    <div class="card">
+        <h4>Total Payroll</h4>
+        <h2>₹15 Lakh</h2>
+    </div>
+
+    <div class="card">
+        <h4>Pending Leaves</h4>
+        <h2>12</h2>
+    </div>
+
+</div>
+
+<div class="table-box">
+
+    <h2 style="margin-bottom:20px;">
+        Employee Report
+    </h2>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Email</th>
+            <th>Salary</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Prashant</td>
+            <td>IT</td>
+            <td>prashant@gmail.com</td>
+            <td>50000</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Rahul</td>
+            <td>HR</td>
+            <td>rahul@gmail.com</td>
+            <td>45000</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Amit</td>
+            <td>Finance</td>
+            <td>amit@gmail.com</td>
+            <td>55000</td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>

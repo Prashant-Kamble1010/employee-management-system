@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply Leave</title>
+
+    <style>
+
+        body{
+        background:#f4f6f9;
+        font-family:'Segoe UI';
+        }
+
+        .container{
+        width:600px;
+        margin:40px auto;
+        background:white;
+        padding:30px;
+        border-radius:15px;
+        box-shadow:0 4px 10px rgba(0,0,0,.1);
+        }
+
+        h2{
+        text-align:center;
+        margin-bottom:20px;
+        color:#6c63ff;
+        }
+
+        input,select,textarea{
+        width:100%;
+        padding:12px;
+        margin:10px 0;
+        border:1px solid #ddd;
+        border-radius:8px;
+        }
+
+        button{
+        width:100%;
+        padding:14px;
+        background:#6c63ff;
+        color:white;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Apply Leave</h2>
+
+    <form>
+
+        <select>
+            <option>Casual Leave</option>
+            <option>Sick Leave</option>
+            <option>Emergency Leave</option>
+            <option>Vacation Leave</option>
+        </select>
+
+        <input type="date">
+
+        <input type="date">
+
+        <textarea rows="4"
+                  placeholder="Reason for Leave"></textarea>
+
+        <button>
+            Submit Leave Request
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

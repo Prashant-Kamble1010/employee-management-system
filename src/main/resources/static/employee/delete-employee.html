@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title>Delete Employee</title>
+
+    <style>
+
+        body{
+        font-family:'Segoe UI';
+        background:#f4f6f9;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        }
+
+        .card{
+        background:white;
+        padding:40px;
+        border-radius:15px;
+        box-shadow:0 5px 15px rgba(0,0,0,.1);
+        text-align:center;
+        width:500px;
+        }
+
+        h2{
+        color:#dc3545;
+        margin-bottom:20px;
+        }
+
+        p{
+        margin-bottom:30px;
+        font-size:18px;
+        }
+
+        .btn{
+        padding:12px 25px;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+        text-decoration:none;
+        color:white;
+        margin:5px;
+        }
+
+        .delete{
+        background:#dc3545;
+        }
+
+        .cancel{
+        background:#28a745;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="card">
+
+    <h2>Delete Employee</h2>
+
+    <p>
+        Are you sure you want to delete
+        <b th:text="${employee.name}"></b> ?
+    </p>
+
+    <a th:href="@{/employees/confirm-delete/{id}(id=${employee.id})}"
+       class="btn delete">
+        Yes Delete
+    </a>
+
+    <a href="/employees"
+       class="btn cancel">
+        Cancel
+    </a>
+
+</div>
+
+</body>
+</html>

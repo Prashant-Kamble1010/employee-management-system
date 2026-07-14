@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Employee</title>
+
+    <style>
+        .search-container{
+margin-bottom:20px;
+}
+
+.search-container form{
+display:flex;
+gap:10px;
+}
+
+.search-container input{
+width:350px;
+padding:12px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.search-container button{
+padding:12px 20px;
+background:#6c63ff;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.search-container a{
+padding:12px 20px;
+background:#28a745;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+        body{
+        background:#f4f6f9;
+        font-family:Segoe UI;
+        }
+
+        .container{
+        width:600px;
+        margin:40px auto;
+        background:white;
+        padding:30px;
+        border-radius:15px;
+        box-shadow:0 3px 10px rgba(0,0,0,.1);
+        }
+
+        input,select{
+        width:100%;
+        padding:12px;
+        margin:10px 0;
+        }
+
+        button{
+        width:100%;
+        padding:12px;
+        background:#6c63ff;
+        color:white;
+        border:none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<div class="search-container">
+
+    <form action="/employees/search" method="get">
+
+        <input
+                type="text"
+                name="keyword"
+                placeholder="Search Employee by Name">
+
+        <button type="submit">
+            Search
+        </button>
+
+        <a href="/employees">
+            Reset
+        </a>
+
+    </form>
+
+</div>
+<div class="container">
+
+    <h2>Add Employee</h2>
+
+    <form action="/employees/save"
+          method="post">
+
+        <input type="text"
+               name="employeeId"
+               placeholder="Employee ID">
+
+        <input type="text"
+               name="name"
+               placeholder="Employee Name">
+
+        <input type="email"
+               name="email"
+               placeholder="Email">
+
+        <input type="text"
+               name="phone"
+               placeholder="Phone">
+
+        <select name="department">
+
+            <option>IT</option>
+            <option>HR</option>
+            <option>Finance</option>
+            <option>Sales</option>
+
+        </select>
+
+        <input type="number"
+               name="salary"
+               placeholder="Salary">
+
+        <input type="date"
+               name="joiningDate">
+
+        <button>
+            Save Employee
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

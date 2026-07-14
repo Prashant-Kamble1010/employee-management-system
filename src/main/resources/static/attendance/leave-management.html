@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leave Management</title>
+
+    <style>
+
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+        background:#f4f6f9;
+        padding:30px;
+        }
+
+        .header{
+        display:flex;
+        justify-content:space-between;
+        margin-bottom:20px;
+        }
+
+        .btn{
+        background:#6c63ff;
+        color:white;
+        padding:12px 20px;
+        text-decoration:none;
+        border-radius:8px;
+        }
+
+        table{
+        width:100%;
+        background:white;
+        border-collapse:collapse;
+        border-radius:15px;
+        overflow:hidden;
+        box-shadow:0 4px 10px rgba(0,0,0,.1);
+        }
+
+        th{
+        background:#6c63ff;
+        color:white;
+        padding:15px;
+        }
+
+        td{
+        padding:12px;
+        text-align:center;
+        border-bottom:1px solid #eee;
+        }
+
+        .approve{
+        background:#28a745;
+        color:white;
+        padding:8px 12px;
+        border:none;
+        border-radius:6px;
+        }
+
+        .reject{
+        background:#dc3545;
+        color:white;
+        padding:8px 12px;
+        border:none;
+        border-radius:6px;
+        }
+
+        .view{
+        background:#0d6efd;
+        color:white;
+        padding:8px 12px;
+        border:none;
+        border-radius:6px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="header">
+    <h2>Leave Requests</h2>
+
+    <a href="/leave/apply" class="btn">
+        Apply Leave
+    </a>
+
+</div>
+
+<table>
+
+    <tr>
+        <th>Employee</th>
+        <th>Leave Type</th>
+        <th>From</th>
+        <th>To</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+
+    <tr>
+
+        <td>Prashant</td>
+        <td>Casual Leave</td>
+        <td>15-Jul-2026</td>
+        <td>17-Jul-2026</td>
+
+        <td>
+<span style="color:orange;font-weight:bold;">
+Pending
+</span>
+        </td>
+
+        <td>
+
+            <button class="approve">
+                Approve
+            </button>
+
+            <button class="reject">
+                Reject
+            </button>
+
+            <button class="view">
+                View
+            </button>
+
+        </td>
+
+    </tr>
+
+</table>
+
+</body>
+</html>

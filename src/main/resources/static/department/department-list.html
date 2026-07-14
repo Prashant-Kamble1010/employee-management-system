@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Department Management</title>
+
+    <style>
+
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+        background:#f4f6f9;
+        padding:30px;
+        }
+
+        .header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:20px;
+        }
+
+        .header h2{
+        color:#333;
+        }
+
+        .add-btn{
+        background:#6c63ff;
+        color:white;
+        padding:12px 20px;
+        text-decoration:none;
+        border-radius:8px;
+        font-weight:bold;
+        }
+
+        table{
+        width:100%;
+        background:white;
+        border-collapse:collapse;
+        box-shadow:0 5px 15px rgba(0,0,0,.1);
+        border-radius:10px;
+        overflow:hidden;
+        }
+
+        th{
+        background:#6c63ff;
+        color:white;
+        padding:15px;
+        }
+
+        td{
+        padding:15px;
+        border-bottom:1px solid #eee;
+        }
+
+        .action{
+        padding:8px 14px;
+        color:white;
+        text-decoration:none;
+        border-radius:6px;
+        margin-right:5px;
+        }
+
+        .edit{
+        background:#0d6efd;
+        }
+
+        .delete{
+        background:#dc3545;
+        }
+
+        .assign{
+        background:#198754;
+        }
+
+        tr:hover{
+        background:#f8f9fa;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="header">
+
+    <h2>Department Management</h2>
+
+    <a href="/departments/add" class="add-btn">
+        + Add Department
+    </a>
+
+</div>
+
+<table>
+
+    <tr>
+        <th>ID</th>
+        <th>Department</th>
+        <th>Head</th>
+        <th>Employees</th>
+        <th>Actions</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>IT</td>
+        <td>John</td>
+        <td>50</td>
+        <td>
+
+            <a href="#" class="action assign">
+                Assign
+            </a>
+
+            <a href="#" class="action edit">
+                Edit
+            </a>
+
+            <a href="#" class="action delete">
+                Delete
+            </a>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>HR</td>
+        <td>Mary</td>
+        <td>20</td>
+        <td>
+
+            <a href="#" class="action assign">
+                Assign
+            </a>
+
+            <a href="#" class="action edit">
+                Edit
+            </a>
+
+            <a href="#" class="action delete">
+                Delete
+            </a>
+
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

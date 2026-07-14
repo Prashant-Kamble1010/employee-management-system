@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary Management</title>
+
+    <style>
+
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+        background:#f4f6f9;
+        padding:30px;
+        }
+
+        .header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:25px;
+        }
+
+        .header h1{
+        color:#333;
+        }
+
+        table{
+        width:100%;
+        background:white;
+        border-collapse:collapse;
+        border-radius:15px;
+        overflow:hidden;
+        box-shadow:0 4px 15px rgba(0,0,0,.1);
+        }
+
+        th{
+        background:#6c63ff;
+        color:white;
+        padding:15px;
+        }
+
+        td{
+        padding:12px;
+        text-align:center;
+        border-bottom:1px solid #eee;
+        }
+
+        .generate{
+        background:#28a745;
+        color:white;
+        padding:8px 15px;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+        }
+
+        .pdf{
+        background:#dc3545;
+        color:white;
+        padding:8px 15px;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+        }
+
+        .email{
+        background:#0d6efd;
+        color:white;
+        padding:8px 15px;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+        }
+
+        .generate:hover,
+        .pdf:hover,
+        .email:hover{
+        opacity:.9;
+        }
+
+        .card-container{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:20px;
+        margin-bottom:30px;
+        }
+
+        .card{
+        background:white;
+        padding:20px;
+        border-radius:15px;
+        box-shadow:0 4px 10px rgba(0,0,0,.1);
+        text-align:center;
+        }
+
+        .card h2{
+        color:#6c63ff;
+        margin-top:10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Salary Management</h1>
+</div>
+
+<div class="card-container">
+
+    <div class="card">
+        <h4>Total Payroll</h4>
+        <h2>₹15,00,000</h2>
+    </div>
+
+    <div class="card">
+        <h4>Total Employees</h4>
+        <h2>150</h2>
+    </div>
+
+    <div class="card">
+        <h4>Total Bonus</h4>
+        <h2>₹50,000</h2>
+    </div>
+
+    <div class="card">
+        <h4>Total Deduction</h4>
+        <h2>₹20,000</h2>
+    </div>
+
+</div>
+
+<table>
+
+    <tr>
+        <th>ID</th>
+        <th>Employee</th>
+        <th>Basic Salary</th>
+        <th>Bonus</th>
+        <th>Deductions</th>
+        <th>Net Salary</th>
+        <th>Actions</th>
+    </tr>
+
+    <tr>
+        <td>101</td>
+        <td>Prashant</td>
+        <td>50000</td>
+        <td>5000</td>
+        <td>1000</td>
+        <td>54000</td>
+
+        <td>
+
+            <button class="generate">
+                Generate
+            </button>
+
+            <button class="pdf">
+                PDF Slip
+            </button>
+
+            <button class="email">
+                Send Email
+            </button>
+
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>102</td>
+        <td>Rahul</td>
+        <td>45000</td>
+        <td>3000</td>
+        <td>500</td>
+        <td>47500</td>
+
+        <td>
+
+            <button class="generate">
+                Generate
+            </button>
+
+            <button class="pdf">
+                PDF Slip
+            </button>
+
+            <button class="email">
+                Send Email
+            </button>
+
+        </td>
+
+    </tr>
+
+</table>
+
+</body>
+</html>

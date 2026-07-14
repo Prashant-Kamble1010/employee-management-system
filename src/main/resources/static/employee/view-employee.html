@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employee Profile</title>
+
+    <style>
+
+        .profile{
+        width:700px;
+        margin:40px auto;
+        background:white;
+        padding:30px;
+        border-radius:15px;
+        box-shadow:0 3px 10px rgba(0,0,0,.1);
+        }
+
+        .row{
+        padding:10px;
+        border-bottom:1px solid #ddd;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="profile">
+
+    <h2>Employee Profile</h2>
+
+    <div class="row">
+        <b>Employee ID :</b>
+        <span th:text="${employee.employeeId}"></span>
+    </div>
+
+    <div class="row">
+        <b>Name :</b>
+        <span th:text="${employee.name}"></span>
+    </div>
+
+    <div class="row">
+        <b>Email :</b>
+        <span th:text="${employee.email}"></span>
+    </div>
+
+    <div class="row">
+        <b>Department :</b>
+        <span th:text="${employee.department}"></span>
+    </div>
+
+    <div class="row">
+        <b>Salary :</b>
+        <span th:text="${employee.salary}"></span>
+    </div>
+
+    <div class="row">
+        <b>Joining Date :</b>
+        <span th:text="${employee.joiningDate}"></span>
+    </div>
+
+</div>
+
+</body>
+</html>
