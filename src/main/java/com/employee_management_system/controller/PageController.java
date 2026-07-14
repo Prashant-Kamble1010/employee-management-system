@@ -10,12 +10,12 @@ public class PageController {
         return "Home/index";
     }
 
-    @GetMapping("/signup")
+    @GetMapping("/signu")
     public String signup() {
         return "Home/signup";
     }
 
-    @GetMapping("/signin")
+    @GetMapping("/signi")
     public String signin() {
         return "Home/signin";
     }
@@ -25,12 +25,12 @@ public class PageController {
         return "Home/dashboard";
     }
 
-    @GetMapping("/aboutus")
+    @GetMapping("/about")
     public String about() {
         return "Home/aboutus";
     }
 
-    @GetMapping("/contactus")
+    @GetMapping("/contact")
     public String contact() {
         return "Home/contactus";
     }
