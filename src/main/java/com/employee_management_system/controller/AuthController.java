@@ -16,17 +16,17 @@ public class AuthController {
 
     @GetMapping("/")
     public String home() {
-        return "index";
+        return "Home/index";
     }
 
     @GetMapping("/signup")
     public String signupPage() {
-        return "signup";
+        return "Home/signup";
     }
 
     @GetMapping("/signin")
     public String signinPage() {
-        return "signin";
+        return "Home/signin";
     }
 
     @PostMapping("/saveEmployee")
@@ -37,7 +37,7 @@ public class AuthController {
         if (!employee.getPassword().equals(confirmPassword)) {
             model.addAttribute("error",
                     "Password and Confirm Password do not match");
-            return "signup";
+            return "Home/signup";
         }
 
         service.saveEmployee(employee);
@@ -45,7 +45,7 @@ public class AuthController {
         model.addAttribute("success",
                 "Registration Successful. Please Login.");
 
-        return "signin";
+        return "Home/signin";
     }
 
     @PostMapping("/loginEmployee")
@@ -60,12 +60,12 @@ public class AuthController {
 
             model.addAttribute("employee", employee);
 
-            return "dashboard";
+            return "Home/dashboard";
         }
 
         model.addAttribute("error",
                 "Invalid Email or Password");
 
-        return "signin";
+        return "Home/signin";
     }
 }
