@@ -25,12 +25,12 @@ public class PageController {
         return "Home/dashboard";
     }
 
-    @GetMapping("/about")
+    @GetMapping("/aboutus")
     public String about() {
         return "Home/aboutus";
     }
 
-    @GetMapping("/contact")
+    @GetMapping("/contactus")
     public String contact() {
         return "Home/contactus";
     }
